@@ -76,6 +76,7 @@ body {
 
     .main-nav__toggle-button {
         display: flex;
+        transition: .5s;
     }
 
     .main-nav__items {
@@ -92,6 +93,10 @@ body {
 
     .main-nav__items.active {
         display: flex;
+    }
+
+    .main-nav__toggle-button.rotate {
+        transform: rotate(90deg);
     }
 
 }

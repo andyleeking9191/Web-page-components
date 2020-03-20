@@ -2,5 +2,6 @@ const toggleButton = document.getElementsByClassName('main-nav__toggle-button')[
 const navLinks = document.getElementsByClassName('main-nav__items')[0];
 
 toggleButton.addEventListener('click', () => {
-    navLinks.classList.toggle('active')
+    navLinks.classList.toggle('active');
+    toggleButton.classList.toggle('rotate');
 })
