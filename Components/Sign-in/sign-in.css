@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./images/background-image.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color:hsla(201, 100%, 6%, 0.6);
+    padding: 50px 30px;
+    width: 50%;
+    min-width: 400px;
+    max-width: 600px;
+}
+
+.login-container__greeting {
+    color: white;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+.form__input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form__input-group label {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin-bottom: 7px;
+}
+
+.form__input-group input {
+    background: hsla(201, 100%, 90%, 0.3);
+    border: 1px solid hsl(201, 100%, 6%);
+    outline: none;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    padding: 0.1rem 0.35rem;
+}
+
+.form__input-group input:focus {
+    border: 1px solid hsl(201, 100%, 50%)
+}
+
+.form__submit {
+    padding: 10px 30px;
+    width: 100%;
+    border-radius: 5px;
+    background: hsla(201, 100%, 50%, 0.1);
+    border: 1px solid hsl(201, 100%, 50%);
+    outline: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.form__submit:hover {
+    background-color: hsla(201, 100%, 50%, 0.3);
+}
+
+.form__submit:focus {
+    background-color: hsla(201, 100%, 50%, 0.5);
+}
